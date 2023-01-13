@@ -2,7 +2,7 @@ using System;
 
 namespace Fundamentos
 {
-    public class Cadenas
+    class Cadenas 
     {
         public void Ejemplo1(){
             string oracion = "This sentence has five words.";
