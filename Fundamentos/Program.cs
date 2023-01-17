@@ -1,13 +1,14 @@
 ﻿
+using System.Diagnostics;
 namespace Fundamentos
 {
     public partial class Program
     {
         public static void Main(string[] args){
-              // int i=0;
+        // Console.WriteLine("Hello, World!");
+        // int i=0;
         // int j=0;
         // int a;
-        // Console.WriteLine("Hello, World!");
         // Par_Referencia c = new Par_Referencia();
         // System.Console.WriteLine(c.Agregar(i));
         // System.Console.WriteLine(i);
@@ -17,6 +18,8 @@ namespace Fundamentos
         // System.Console.WriteLine(j);
         // System.Console.WriteLine(c.Agregar3(out a));
         // System.Console.WriteLine(a);
+        // int suma = c.SumaParametros(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
+        // System.Console.WriteLine(suma);
 
         // Enumeraciones enumeraciones = Enumeraciones.Usuario;
 
@@ -43,9 +46,34 @@ namespace Fundamentos
         // tabla.Menu();
 
         //FileManager fileManager = new FileManager(@"C:\Users\PC-1\Documents\Practicas\practicaCSharpNotes\Fundamentos\Prueba.txt");
-        
+        // Colecciones c = new Colecciones();
+        // c.Diccionario();
+
+        // ClienteManager manager = new ClienteManager();
+        //forma sencilla
+        // foreach (Cliente cliente in manager)
+        // {
+        //     System.Console.WriteLine(cliente.Nombre);
+        // }  
+
+        // var enumerator = manager.GetEnumerator();
+        // while (enumerator.MoveNext())
+        // {
+        //     System.Console.WriteLine(((Cliente)enumerator.Current).Nombre);
+        // }
+        // FechaPractica fp = new FechaPractica();
+        // fp.CalculoSiglo("16/01/2000");
+
+        // CentralHub hub = new CentralHub();
+        // SistemaAlarma alarma = new SistemaAlarma();
+        // SistemaLuces luces = new SistemaLuces();
+        // SistemasElectronicos electronicos = new SistemasElectronicos();
+        // // hub.Add(luces.ApagarLuces);
+        // hub.Add(() => luces.ApagarLuces(1));
+        // hub.Add(alarma.EncenderAlarma);
+        // hub.Add(electronicos.ApagarElectodomesticos);
+        // // hub.IniciarProtocolo();
         Console.ReadLine();
         }
     }
 }
- 

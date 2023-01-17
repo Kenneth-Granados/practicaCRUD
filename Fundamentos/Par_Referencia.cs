@@ -20,5 +20,19 @@ namespace Fundamentos
         System.Console.WriteLine("Referencia: out se inicializa en el metodo");
         return j;
        } 
+        public int SumaParametros(params int[] numeros){// siempre se reiniciara la variable
+        if (numeros.Length < 2 || numeros == null)
+        {
+            throw new ArgumentException("Se deben ingresar más de 2 valores");
+        } else
+        {
+            int suma = 0;
+            foreach (var numero in numeros)
+            {
+                suma += numero;
+            }
+            return suma;
+        }
+       } 
     }
 }
