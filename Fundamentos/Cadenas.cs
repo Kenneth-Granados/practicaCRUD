@@ -1,3 +1,4 @@
+using System.Diagnostics.Contracts;
 using System;
 
 namespace Fundamentos
@@ -18,7 +19,7 @@ namespace Fundamentos
         public void Ejemplo2(){//Este código busca espacios en blanco o caracteres de puntuación en una cadena para determinar cuántas palabras contiene la cadena.
             string s1 = "This string consists of a single short sentence.";
             int nWords = 0;
-
+            
             s1 = s1.Trim();      
             for (int ctr = 0; ctr < s1.Length; ctr++) {
             if (Char.IsPunctuation(s1[ctr]) | Char.IsWhiteSpace(s1[ctr]))
@@ -43,12 +44,19 @@ namespace Fundamentos
         public void Ejemplo3(string cadena){
 
             var palabras = cadena.Split(" ");
+            string str = "hola mundo";
+            
             Console.WriteLine("La oración : {0} , contiene {1} palabras.\nLas cuales son: ",cadena,palabras.Length);
             foreach (var palabra in palabras)
             {
                 Console.WriteLine(palabra);
             } 
-
+            //Mayuscula toda la oración
+            Console.WriteLine(str.ToUpper());
+            // mayuscula solo la primer letra
+            var res = str.Split(" ");
+            Console.WriteLine((char.ToUpper(res[0][0]) + res[0].Substring(1)) +" "+ 
+            (char.ToUpper(res[1][0]) + res[1].Substring(1)));
         }
 
     }
